@@ -1,27 +1,216 @@
 body{
-	background: orange;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	color: #1d1d1d;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   	font-weight: 300;
 }
+
+#bg{
+	height: 100vh;
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+nav{
+	background: rgba(29,29,29,0.5);
+	height: 50px;
+	width: 100%;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul{
+	width: 500px;
+	margin-left: 10%;
+	margin-top: 0px;
+	list-style: none;
+	float: left;
+}
+
+nav ul a li{
+	border: solid 0px white;
+	display: inline-block;
+	width: auto;
+	text-align: center;
+	padding: 16px;
+	font-size: 12pt;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: white;
+}
+
+nav ul a li:hover{
+	background: white;
+	color: #1d1d1d;
+}
+
+#socialIcons{
+	width:260px;
+	padding: 10px;
+	float: right;
+}
+#socialIcons img{
+	height: 30px;
+		
+}
+#socialIcons a{
+	text-decoration: none;
+	color: white;
+}
+
+#logo{
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 100%;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16pt;
+	padding: 25px;
+}
+
+#work{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+#work img{
+	width: 24.5%;
+	padding: 0px;
+	margin: 0px;
+}
+
 /* For the desktop */
+/*
 @media(min-width: 1200px){
 	body{
-		background: yellow;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#bg{
+		height: 100vh;
+		background: url(../images/bg.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	nav{
+		background: rgba(29,29,29,0.5);
+		height: 50px;
+	}
+
+	nav ul{
+
+	}
+
+	nav ul a li{
+
 	}
 }
 /* For the laptop */
-@media(min-width: 768px) and (max-width: 979px){
+/*@media(min-width: 768px) and (max-width: 979px){
 	body{
-		background: pink;
+	margin: 0px;
+	padding: 0px;
+	}
+
+	#bg{
+		height: 100vh;
+		background: url(../images/bg.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	nav{
+		background: rgba(29,29,29,0.5);
+		height: 50px;
+	}
+
+	nav ul{
+
+	}
+
+	nav ul a li{
+
 	}
 }
 /* For the tablet */
-@media(max-width: 767px){
+/*@media(max-width: 767px){
 	body{
-		background: green;
+	margin: 0px;
+	padding: 0px;
+	}
+
+	#bg{
+		height: 100vh;
+		background: url(../images/bg.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	nav{
+		background: rgba(29,29,29,0.5);
+		height: 50px;
+	}
+
+	nav ul{
+
+	}
+
+	nav ul a li{
+
 	}
 }
 /* For the phone */
-@media(max-width: 480px){
+/*@media(max-width: 480px){
 	body{
-		background: black;
+	margin: 0px;
+	padding: 0px;
 	}
-}
+
+	#bg{
+		height: 100vh;
+		background: url(../images/bg.jpg) no-repeat center center fixed; 
+	  	-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	}
+
+	nav{
+		background: rgba(29,29,29,0.5);
+		height: 50px;
+	}
+
+	nav ul{
+
+	}
+
+	nav ul a li{
+
+	}
+}*/
