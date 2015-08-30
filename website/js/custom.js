@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 /********************Recent Projects********************************/
 	
-	$("img").on({
+	$("#work img").on({
     'mouseover' : function() {
     	var picturePath = $(this).attr("src").split("_");
       	picturePath[0] = picturePath[0] + ".jpg";
