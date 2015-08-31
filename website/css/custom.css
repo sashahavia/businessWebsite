@@ -120,6 +120,114 @@ nav ul a li:hover{
     display: block;
 }
 
+/*Contact Page*/
+
+#contact{
+	background: rgba(29,29,29,0.5);
+	height: 50px;
+	width: 100%;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+}
+
+#content{
+	width: 100%;
+	margin-top: 15%;
+}
+
+#content iframe{
+	z-index: 1000;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#content h2{
+	text-align: center;
+	margin-top: 40px;
+}
+#contactForm{
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+	line-height: 25px;
+}
+.contact_form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding: 0px 30px 20px 30px;
+    font: 16pt;
+}
+
+#contactForm2 {
+	display: none;
+    text-align: center;
+    width: 960px;
+    padding: 0px 30px 20px 30px;
+    font: 12pt;
+}
+.contact_form h3{
+    display: block; 
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+
+.contact_form input[type="name"], 
+.contact_form input[type="email"], 
+.contact_form textarea{
+    border: solid 1px #1d1d1d;
+    color: #1d1d1d;
+    height: 30px;
+    margin-left: 20px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.contact_form input[type="checkbox"]{
+	border: solid 1px #1d1d1d;
+    color: #1d1d1d;
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+
+}
+
+.contact_form textarea{
+    height:200px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+.contact_form input[type="reset"], 
+.contact_form input[type="submit"]{
+	display: inline-block;
+	background: #1d1d1d;
+	border-radius: 10px;
+	color: white;
+	padding: 10px;
+	font-weight: 200;
+	font-size: 10pt;
+	margin-top: 30px;
+	margin-left: 20px;
+	border: none;
+
+}
+
+.contact_form input[type="reset"]:hover, 
+.contact_form input[type="submit"]:hover{
+	background: rgba(29,29,29,0.5);
+}
+
+
+/* Contact Page */
+
 footer{
 	text-align: center;
 	margin-top: 25px;
