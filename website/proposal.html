@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Proposal</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<style type="text/css">
+		body{
+			height: 100vh;
+			background: url(images/bg.jpg) no-repeat center center fixed; 
+		  	-webkit-background-size: cover;
+		  	-moz-background-size: cover;
+		  	-o-background-size: cover;
+		  	background-size: cover;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<nav id="otherPages">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="portfolio.html"><li>Portfolio</li></a>
+			<a href="proposal.html"><li>Proposal</li></a>
+			<a href="contact.html"><li>Contact</li></a>
+		</ul>
+		<div id="socialIcons">
+			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+			<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+			<a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
+			<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"></a>
+			<a href="https://www.pinterest.com" target="_blank"><img src="images/pinterest.png"></a>
+		</div>
+	</nav>
+
+	<div id="content" class="clearfix">
+		
+		<h2>Get Your Proposal</h2>
+		<div id="proposal">
+			<p class="step1">I want to build a website
+				<select id="project_type" data-placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+			       	<option selected="selected"></option>
+			        <option value="type1">website</option>
+			        <option value="type2">online store</option>
+			        <option value="type3">mobile app</option>
+			        <option value="type4">digital product</option>
+		        </select>
+			</p>
+
+			<p class="step2" id="type1">with 
+		        <select id="project_pages" data-placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+		            <option selected="selected"></option>
+		            <option value="1">less than 5</option>
+		            <option value="2">5 ~ 10</option>
+		            <option value="3">10 ~ 20</option>
+		            <option value="4">over 20</option>            
+		        </select>
+	        pages
+	        </p>
+
+		    <p class="step2" id="type2">with 
+		        <select id="project_products" data-placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+		            <option selected="selected"></option>
+		            <option value="1">less than 5</option>
+		           	<option value="2">10 ~ 50</option>
+		            <option value="3">50 ~ 200</option>
+		            <option value="4">over 200</option>            
+		        </select>
+		        products
+	        </p>
+		</div>
+	</div>
+	
+	<footer class="clearfix">
+		<img src="images/logo_footer.png">
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>

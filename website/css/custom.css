@@ -7,7 +7,9 @@ body{
    	font-weight: 300;
 }
 
-#bg{
+
+
+.bg{
 	height: 100vh;
 	background: url(../images/bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -122,7 +124,7 @@ nav ul a li:hover{
 
 /*Contact Page*/
 
-#contact{
+#otherPages{
 	background: rgba(29,29,29,0.5);
 	height: 50px;
 	width: 100%;
@@ -143,6 +145,10 @@ nav ul a li:hover{
 	z-index: 1000;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	pointer-events: none;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 #content h2{
@@ -191,7 +197,6 @@ nav ul a li:hover{
 }
 
 .contact_form input[type="checkbox"]{
-	border: solid 1px #1d1d1d;
     color: #1d1d1d;
     height: 15px;
     width: 15px;
@@ -228,6 +233,35 @@ nav ul a li:hover{
 
 /* Contact Page */
 
+/* Proposal Page */
+
+#proposal{
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 24pt
+}
+
+
+.step1 select,
+.step2 select{
+	background: transparent;
+	border: solid 0px;
+	border-bottom: thin dotted #1d1d1d;
+	font-size: 2vh;
+
+}
+
+.step1 option{
+	background: #1d1d1d;
+	color: white;
+}
+
+/* Proposal Page */
+
+/* Footer */
 footer{
 	text-align: center;
 	margin-top: 25px;
