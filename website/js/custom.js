@@ -1,7 +1,5 @@
 $(document).ready(function(){
-	
-	
-    
+
 	$(window).scroll(function(){
 		var window_top = $(window).scrollTop();
     	var div_top = $('#sticky_anchor').offset().top;
@@ -11,11 +9,25 @@ $(document).ready(function(){
 			
 	    	//console.log("I am in sticky_relocate");
 	        $("#nav").addClass("sticky");
+	        
 	    } else {
 	    	console.log("I am not");
 	        $("#nav").removeClass("sticky");
 	    }
+
 	});
+
+	writeText();
+/*******************Animate Text**********************/
+
+function writeText(){
+	var str = "Wide range of design and development services provided with a personal experience.";
+	var spans = '<b>' + str.split(/\s+/).join(' </b><b>') + '</b>';
+	$(spans).hide().appendTo("#text").each(function(i) {
+	    $(this).delay(1000 * i).fadeIn();
+	});
+}
+
 /********************Recent Projects********************************/
 	
 	$("#work img").on({
@@ -33,7 +45,5 @@ $(document).ready(function(){
     	}
 
  	 });
-
-	    
 
 });

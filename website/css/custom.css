@@ -48,7 +48,7 @@ nav ul a li{
 	display: inline-block;
 	width: auto;
 	text-align: center;
-	padding: 16px;
+	padding: 14px;
 	font-size: 12pt;
 	font-weight: 200;
 	text-transform: uppercase;
@@ -102,7 +102,7 @@ nav ul a li:hover{
 	padding-bottom: 50px;
 }
 
-#work{
+.work{
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -141,19 +141,20 @@ nav ul a li:hover{
 	margin-top: 15%;
 }
 
-#content iframe{
-	z-index: 1000;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	pointer-events: none;
-	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-}
+#map {
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    pointer-events: none;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(6,6,6,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(6,6,6,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(6,6,6,0.75);
+    }
+
 
 #content h2{
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 #contactForm{
 	width: 960px;
@@ -237,11 +238,15 @@ nav ul a li:hover{
 
 #proposal{
 	width: 960px;
+	min-height: 300px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 20px;
 	line-height: 25px;
 	text-align: center;
 	font-size: 24pt
+}
+.proposal{
+	font-weight: bold;
 }
 
 
@@ -259,7 +264,28 @@ nav ul a li:hover{
 	color: white;
 }
 
+#type1, #type2{
+	display: none;
+}
+
 /* Proposal Page */
+
+/* Portfolio */
+.portfolio{
+	width: 1000px;
+	margin: 0 auto;
+
+}
+.portfolio img{
+	margin: 15px;
+	border: solid 15px rgba(53,53,53,0.5);
+	border-radius: 5px;
+	width: 30%;
+	-webkit-box-shadow: 2px 3px 5px rgba(6,6,6,0.75);
+	-moz-box-shadow: 2px 3px 5px rgba(6,6,6,0.75);
+	box-shadow: 2px 3px 5px rgba(6,6,6,0.75);
+}
+/* Portfolio */
 
 /* Footer */
 footer{

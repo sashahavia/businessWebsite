@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<style type="text/css">
 		body{
 			height: 100vh;
@@ -16,59 +17,64 @@
 		  	background-size: cover;
 		}
 	</style>
+
 	
 </head>
 <body>
 	
-	<nav id="otherPages">
-		<ul>
-			<a href="index.html"><li>Home</li></a>
-			<a href="portfolio.html"><li>Portfolio</li></a>
-			<a href="proposal.html"><li>Proposal</li></a>
-			<a href="contact.html"><li>Contact</li></a>
-		</ul>
-		<div id="socialIcons">
-			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
-			<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
-			<a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
-			<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"></a>
-			<a href="https://www.pinterest.com" target="_blank"><img src="images/pinterest.png"></a>
-		</div>
-	</nav>
+		<nav id="otherPages">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="portfolio.html"><li>Portfolio</li></a>
+				<a href="proposal.html"><li>Proposal</li></a>
+				<a href="contact.html"><li>Contact</li></a>
+			</ul>
+			<div id="socialIcons">
+				<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+				<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png"></a>
+				<a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png"></a>
+				<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"></a>
+				<a href="https://www.pinterest.com" target="_blank"><img src="images/pinterest.png"></a>
+			</div>
+		</nav>
 
-	<div id="content" class="clearfix">
-		<h2>Contact Us</h2>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d193571.46257956512!2d-74.12010000634764!3d40.70581700592625!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1439755459882" width="100%" height="350" frameborder="0" style="border:solid 1px #1d1d1d;" allowfullscreen></iframe>
-		<form action="process.html" method="get" class="contact_form" id="contactForm">
-			<h3>Your name:</h3>
-			<input id="name" type="name" placeholder="Type in your name"/>
-			<br>
-			<h3>Your email:</h3>
-			<input id="email" type="email" placeholder="Type your email"/> 
-			<br>
-			<h3>Subject</h3>
-			<input id="design" type="checkbox" name="topic"/>Design a Website<br>
-			<input id="build" type="checkbox" name="topic"/>Build a Website<br>
-			<input id="wordPress" type="checkbox" name="topic"/>Word Press
-			<br>
-			<h3>Message:</h3>
-			<textarea id="message" cols="30" rows="30"></textarea>
-			<br>
-			<input type="reset" value="RESET"/>
-			<input id="submit" type="submit" value="SUBMIT"/>
-		</form>	
-		<div id="contactForm2">
-			<h4>Thank you for contacting us! We will get back to you shortly!</h4>
-		</div>
+		<div id="content" class="clearfix">
+			<h2>Contact Us</h2>
+			<div id="map"></div>
+			
 
-	</div>
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d193571.46257956512!2d-74.12010000634764!3d40.70581700592625!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1439755459882" width="100%" height="350" frameborder="0" style="border:solid 1px #333333;" allowfullscreen></iframe> -->
+			<form action="process.html" method="get" class="contact_form" id="contactForm">
+				<h3>Your name:</h3>
+				<input id="name" type="name" placeholder="Type in your name"/>
+				<br>
+				<h3>Your email:</h3>
+				<input id="email" type="email" placeholder="Type your email"/> 
+				<br>
+				<h3>Subject</h3>
+				<input id="design" type="checkbox" name="topic"/>Design a Website<br>
+				<input id="build" type="checkbox" name="topic"/>Build a Website<br>
+				<input id="wordPress" type="checkbox" name="topic"/>Word Press
+				<br>
+				<h3>Message:</h3>
+				<textarea id="message" cols="30" rows="30"></textarea>
+				<br>
+				<input type="reset" value="RESET"/>
+				<input id="submit" type="submit" value="SUBMIT"/>
+			</form>	
+			<div id="contactForm2">
+				<h4>Thank you for contacting us! We will get back to you shortly!</h4>
+			</div>
+
+		</div>
+		
+		<footer class="clearfix">
+			<img src="images/logo_footer.png">
+		</footer>
 	
-	<footer class="clearfix">
-		<img src="images/logo_footer.png">
-	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="js/custom.js"></script>
-
+	<script src="js/contact.js"></script>
+	
 </body>
 </html>
