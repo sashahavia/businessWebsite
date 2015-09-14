@@ -175,12 +175,18 @@ nav ul a li:active{
 }
 
 #contactForm2 {
-	display: none;
+	margin: 0 auto;
     text-align: center;
     width: 960px;
-    padding: 0px 30px 20px 30px;
-    font: 12pt;
+    min-height: 250px;
+    margin-top: 50px;
+    
+
 }
+#contactForm2 h1{
+	line-height: 50px;
+}
+
 .contact_form h3{
     display: block; 
     margin-left: 20px;
@@ -253,13 +259,13 @@ nav ul a li:active{
 	font-weight: bold;
 }
 
-
 .step1 select,
 .step2 select{
 	background: transparent;
+	border-radius: 0px;
 	border: solid 0px;
 	border-bottom: thin dotted #1d1d1d;
-	font-size: 2vh;
+	font-size: 3vh;
 
 }
 
@@ -268,7 +274,7 @@ nav ul a li:active{
 	color: white;
 }
 
-#choice2, #choice3, #choice4{
+#choice2, #choice3, #choice4, #choice5{
 	display: none;
 }
 
