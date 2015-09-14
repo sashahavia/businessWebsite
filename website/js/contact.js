@@ -17,8 +17,8 @@ $(document).ready(function () {
                 },{
                     featureType: "road",
                     stylers: [
-                        { hue: '#f21827' },
-                        { saturation: -70 }
+                        { hue: '#191919' },
+                        { saturation: -200 }
                     ]
                 },{
                     featureType: "building",

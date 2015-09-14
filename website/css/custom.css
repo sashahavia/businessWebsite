@@ -59,6 +59,10 @@ nav ul a li:hover{
 	background: white;
 	color: #1d1d1d;
 }
+nav ul a li:active{
+	background: white;
+	color: #1d1d1d;
+}
 
 #socialIcons{
 	width:260px;
@@ -264,7 +268,7 @@ nav ul a li:hover{
 	color: white;
 }
 
-#type1, #type2{
+#choice2, #choice3, #choice4{
 	display: none;
 }
 
