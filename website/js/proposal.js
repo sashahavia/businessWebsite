@@ -4,6 +4,8 @@ $(document).ready(function(){
 	var webChoice = "";
 	var storeChoice = "";
 	var wordChoice = "";
+	var timeChoice = "";
+	var lastChoice = "";
 	//console.log("This is first Choice "+ webFirstChoice);
 
 	// Project Type selection
@@ -47,6 +49,93 @@ $(document).ready(function(){
 		}
 
 	}
+
+	$("#project_time").on("change", function(){
+		timeChoice = $(this).val();
+		showPriority(timeChoice);
+	});
+
+	function showPriority(data){
+		if( data != ""){
+			$("#choice6").show();
+		}
+	}
+
+	$("#project_priority").on("change", function(){
+		lastChoice = $(this).val();
+		showCalculate(lastChoice);
+	});
+
+	function showCalculate(data){
+		if( data != ""){
+			$("#calculate").show();
+		}
+	}
+
+	$("#submit_estimate").click(function(){
+		$("#content").hide();
+		$("#options").show();
+	});
+
+	// Contact Form Proposal
+
+	var emailP = "";
+    var nameP = "";
+    var message = "";
+    $("#submitP").click(function(){
+        //console.log("CLICK WORKS");
+        nameP = $("#nameP").val();
+        emailP = $("#emailP").val();
+
+        emailValid = validate( "email", emailP );
+
+        if( emailValid ){
+        	
+        }
+    });
+
+    function validate(dataType, data){
+        var result = false;
+
+        if(data != ""){
+            //console.log("Continue Validation");
+            switch(dataType){
+                case "email":
+                    //validate email
+                    //find @
+                    if(data.indexOf('@') != -1){
+                        //console.log("The @ found");
+                        result = true;
+                        if(data.indexOf('.') != -1){
+                            //console.log("valid");
+                            result = true;
+                        }else{
+                            //console.log("inavlid email");
+                            result = false;
+                        }
+                    }else{
+                        //console.log(" No @ was found, invalid email");
+                        result = false;
+                    }
+                    break;
+                case "name":
+                    //validate password
+                    if(data.length >= 6){
+                        //valid
+                        result = true;
+                    }else{
+                        //valid
+                        result = false;
+                    }
+                    break;
+            }
+        }else{
+            //console.log( "No data provided!");
+            result = false;
+        }
+        return result;
+    }
+
 
 	
 
