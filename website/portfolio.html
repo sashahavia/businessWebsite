@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+	
 	<style type="text/css">
 		body{
 			height: 100vh;
@@ -15,7 +17,12 @@
 		  	-o-background-size: cover;
 		  	background-size: cover;
 		}
+
+		.blueimp-gallery {
+			background: rgba(29,29,29,0.7);
+		}
 	</style>
+
 	
 </head>
 <body>
@@ -37,20 +44,56 @@
 	</nav>
 
 	<div id="content" class="clearfix">
-		<div class="row portfolio">
-			<a href="http://coolstrut.com/" target="_blank"><img src="images/coolstrut.jpg"></a>
-			<a href="http://fbbleauhotelmiami.com/" target="_blank"><img src="images/fbb.jpg"></a>
-			<a href="http://www.gammabetadelta.org/" target="_blank"><img src="images/gbd.jpg"></a>
-			<img src="images/health.jpg">
-			<img src="images/brochure.jpg">
-			<img src="images/miamoda.jpg">
-			<img src="images/wonderland.jpg">
-			<img src="images/personalWebsite.jpg">
-			<img src="images/causeWebsite.jpg">
-			<img src="images/jQuery.jpg">
-			<img src="images/chips.jpg">
-			<img src="images/giftBox.jpg">
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		    <div class="slides"></div>
+		    <h3 class="title"></h3>
+		    <a class="prev">‹</a>
+		    <a class="next">›</a>
+		    <a class="close">×</a>
+		    <a class="play-pause"></a>
+		    <ol class="indicator"></ol>
 		</div>
+
+		<div class="portfolio" id="links">
+			<a href="images/front_page.jpg" title="coolstrut">
+				<img src="images/coolstrut.jpg">
+			</a>
+			<a href="images/home_page.jpg" title="FBB">
+				<img src="images/fbb.jpg">
+			</a>
+			<a href="images/g_home_page.jpg" title="GBD">
+				<img src="images/gbd.jpg">
+			</a>
+			<a href="images/h_front_page.jpg" title="Health">
+				<img src="images/health.jpg">
+			</a>
+			<a href="images/1and8pages.jpg" title="Brochure">
+				<img src="images/brochure.jpg">
+			</a>
+			<a href="images/miamoda.jpg" title="Miamoda">
+				<img src="images/miamoda.jpg">
+			</a>
+			<a href="images/wonderland.jpg" title="wonderland">
+				<img src="images/wonderland.jpg">
+			</a>
+			<a href="images/personalWebsite.jpg" title="personalWebsite">
+				<img src="images/personalWebsite.jpg">
+			</a>
+			<a href="images/causeWebsite.jpg" title="causeWebsite">
+				<img src="images/causeWebsite.jpg">
+			</a>
+			<a href="images/jQuery.jpg" title="jQuery">
+				<img src="images/jQuery.jpg">
+			</a>
+			<a href="images/chips.jpg" title="chips">
+			<img src="images/chips.jpg">
+			</a>
+			<a href="images/giftBox.jpg" title="giftBox">
+				<img src="images/giftBox.jpg">
+			</a>
+		</div>
+
+		
 
 	</div>
 	
@@ -60,6 +103,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/portfolio.js"></script>
-
+	<script src="js/blueimp-gallery.min.js"></script>
 </body>
 </html>

@@ -81,16 +81,31 @@ $(document).ready(function(){
 
 	var emailP = "";
     var nameP = "";
-    var message = "";
+    var messageP = "";
     $("#submitP").click(function(){
         //console.log("CLICK WORKS");
         nameP = $("#nameP").val();
         emailP = $("#emailP").val();
+        messageP = $("#messageP").val();
 
-        emailValid = validate( "email", emailP );
+        namePValid = validate( "name", nameP );
 
-        if( emailValid ){
-        	
+        if( namePValid ){
+        	emailPValid = validate( "email", emailP );
+			if( emailPValid ){
+				//console.log("moving to message");
+				messagePValid = validate("name", messageP);
+				if( messagePValid ){
+					//console.log("Matching passwords??");
+					$("#contactProposal").submit();
+				}else{
+					alert("Please enter your message");
+				}
+			}else{
+				alert("Sorry invalid email ");
+			}
+		}else{
+			alert("Please enter your name");
         }
     });
 
@@ -120,7 +135,7 @@ $(document).ready(function(){
                     break;
                 case "name":
                     //validate password
-                    if(data.length >= 6){
+                    if(data.length > 2){
                         //valid
                         result = true;
                     }else{

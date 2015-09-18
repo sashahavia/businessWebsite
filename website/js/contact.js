@@ -54,6 +54,7 @@ $(document).ready(function () {
         //console.log("CLICK WORKS");
         name = $("#name").val();
         email = $("#email").val();
+        message= $("#message").val();
         
         console.log($('input[name="topic"]:checked').serialize());
 
@@ -63,9 +64,29 @@ $(document).ready(function () {
            console.log(subject); 
         });
 
-        emailValid = validate( "email", email );
+        nameValid = validate( "name", name );
 
-        if( emailValid ){
+        if( nameValid ){
+            emailValid = validate( "email", email );
+            if( emailPValid ){
+                //console.log("moving to message");
+                subjectValid = validate("name", message);
+                if( subjectValid ){
+                    //console.log("moving to subject");
+                    subjectValid = validate( "name", subject );
+                    if( subjectValid ){
+                        $("#contactForm").submit();
+                    }else{
+                        alert("Please enter your message");
+                    }
+                }else{
+                    alert("Please choose a subject");
+                }
+            }else{
+                alert("Sorry invalid email ");
+            }
+        }else{
+            alert("Please enter your name");
         }
     });
 
@@ -95,7 +116,7 @@ $(document).ready(function () {
                     break;
                 case "name":
                     //validate password
-                    if(data.length >= 6){
+                    if( data.length >= 3 ){
                         //valid
                         result = true;
                     }else{

@@ -34,7 +34,7 @@ function repeatText(){
 		console.log("I am in repeatText function");
 		$("#text").empty();
 		writeText();
-	}, 12000);
+	}, 13000);
 }
 
 /********************Recent Projects********************************/
